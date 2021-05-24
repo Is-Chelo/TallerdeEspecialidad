@@ -24,22 +24,110 @@ INSERT INTO cliente(nombre, latitud, longitud) values ('Estadium Patria', -19.03
 INSERT INTO cliente(nombre, latitud, longitud) values ('Patacon',-19.026778466613955, -65.26936232144419);
 INSERT INTO cliente(nombre, latitud, longitud) values ('Mercado Central',-19.041950903133287, -65.26427849190807);
 
+INSERT INTO cliente(nombre, latitud, longitud) values ('ParqueBolivar',-19.04100227970769, -65.26532361635684);
+INSERT INTO cliente(nombre, latitud, longitud) values ('Cementerio',-19.052493938227737, -65.26882908347841);
+INSERT INTO cliente(nombre, latitud, longitud) values ('Hospital San Barbara',-19.044750676514315, -65.26742167648021);
+INSERT INTO cliente(nombre, latitud, longitud) values ('EL tejar',-19.06199553368243, -65.27252920981795);
+INSERT INTO cliente(nombre, latitud, longitud) values ('Parada Tarabuco',-19.04910588476073, -65.24678256451645);
+
+-- Aumentar 
+INSERT INTO cliente(nombre, latitud, longitud) values ('alto Munaypata',-19.01376960186104, -65.2628026627765);
+INSERT INTO cliente(nombre, latitud, longitud) values ('Los Tarcos',-19.01652898475465, -65.27301987473552);
+INSERT INTO cliente(nombre, latitud, longitud) values ('Plaza 25 de mayo',-19.047903156425114, -65.25972597845735);
+INSERT INTO cliente(nombre, latitud, longitud) values ('Hospital Cristo de las Americas',-19.0451805410047, -65.268759214635);
+INSERT INTO cliente(nombre, latitud, longitud) values ('Cancha Tocopilla',-19.034253449146277, -65.26452329032888);
+
+
+
 
 -- INSERTAMOS LOS ARCOS 
-INSERT INTO rutas.graph(source, target)values(1,2);
-INSERT INTO rutas.graph(source, target)values(1,3);
-INSERT INTO rutas.graph(source, target)values(2,1);
-INSERT INTO rutas.graph(source, target)values(2,3);
-INSERT INTO rutas.graph(source, target)values(2,5);
-INSERT INTO rutas.graph(source, target)values(3,1);
-INSERT INTO rutas.graph(source, target)values(3,2);
-INSERT INTO rutas.graph(source, target)values(3,4);
-INSERT INTO rutas.graph(source, target)values(3,5);
-INSERT INTO rutas.graph(source, target)values(4,3);
-INSERT INTO rutas.graph(source, target)values(4,5);
-INSERT INTO rutas.graph(source, target)values(5,2);
-INSERT INTO rutas.graph(source, target)values(5,3);
-INSERT INTO rutas.graph(source, target)values(5,4);
+INSERT INTO rutas.graph(id,source, target)values(1,1,2);
+INSERT INTO rutas.graph(id,source, target)values(2,1,3);
+INSERT INTO rutas.graph(id,source, target)values(3,2,1);
+INSERT INTO rutas.graph(id,source, target)values(4,2,3);
+INSERT INTO rutas.graph(id,source, target)values(5,2,5);
+INSERT INTO rutas.graph(id,source, target)values(6,3,1);
+INSERT INTO rutas.graph(id,source, target)values(7,3,2);
+INSERT INTO rutas.graph(id,source, target)values(8,3,4);
+INSERT INTO rutas.graph(id,source, target)values(9,3,5);
+INSERT INTO rutas.graph(id,source, target)values(10,4,3);
+INSERT INTO rutas.graph(id,source, target)values(11,4,5);
+INSERT INTO rutas.graph(id,source, target)values(12, 5,2);
+INSERT INTO rutas.graph(id,source, target)values(13,5,3);
+INSERT INTO rutas.graph(id,source, target)values(14,5,4);
+
+INSERT INTO rutas.graph(id,source, target)values(15,1,6);
+INSERT INTO rutas.graph(id,source, target)values(16,1,7);
+INSERT INTO rutas.graph(id,source, target)values(17,1,8);
+INSERT INTO rutas.graph(id,source, target)values(18,6,1);
+INSERT INTO rutas.graph(id,source, target)values(19,7,1);
+INSERT INTO rutas.graph(id,source, target)values(20,8,1);
+INSERT INTO rutas.graph(id,source, target)values(21,2,6);
+INSERT INTO rutas.graph(id,source, target)values(22,6,2);
+INSERT INTO rutas.graph(id,source, target)values(23,3,6);
+INSERT INTO rutas.graph(id,source, target)values(24,3,7);
+INSERT INTO rutas.graph(id,source, target)values(25,3,8);
+INSERT INTO rutas.graph(id,source, target)values(26,3,9);
+
+INSERT INTO rutas.graph(id,source, target)values(27,6,3);
+INSERT INTO rutas.graph(id,source, target)values(28,7,3);
+INSERT INTO rutas.graph(id,source, target)values(29,8,3);
+INSERT INTO rutas.graph(id,source, target)values(30,9,3);
+
+INSERT INTO rutas.graph(id,source, target)values(31,4,9);
+INSERT INTO rutas.graph(id,source, target)values(32,4,8);
+INSERT INTO rutas.graph(id,source, target)values(33,9,4);
+INSERT INTO rutas.graph(id,source, target)values(34,8,4);
+
+INSERT INTO rutas.graph(id,source, target)values(35,5,9);
+INSERT INTO rutas.graph(id,source, target)values(36,9,5);
+
+
+-- Aumentar 
+
+INSERT INTO rutas.graph(id,source, target)values(37,6,14);
+INSERT INTO rutas.graph(id,source, target)values(38,7,14);
+INSERT INTO rutas.graph(id,source, target)values(39,7,8);
+INSERT INTO rutas.graph(id,source, target)values(40,8,9);
+INSERT INTO rutas.graph(id,source, target)values(41,9,10);
+INSERT INTO rutas.graph(id,source, target)values(42,8,10);
+INSERT INTO rutas.graph(id,source, target)values(43,8,14);
+INSERT INTO rutas.graph(id,source, target)values(44,8,11);
+INSERT INTO rutas.graph(id,source, target)values(45,10,14);
+INSERT INTO rutas.graph(id,source, target)values(46,10,12);
+INSERT INTO rutas.graph(id,source, target)values(47,10,11);
+INSERT INTO rutas.graph(id,source, target)values(48,12,11);
+INSERT INTO rutas.graph(id,source, target)values(49,11,13);
+INSERT INTO rutas.graph(id,source, target)values(50,13,14);
+INSERT INTO rutas.graph(id,source, target)values(51,8,7);
+
+INSERT INTO rutas.graph(id,source, target)values(52,14,7);
+INSERT INTO rutas.graph(id,source, target)values(53,8,7);
+INSERT INTO rutas.graph(id,source, target)values(54,9,8);
+INSERT INTO rutas.graph(id,source, target)values(55,10,9);
+INSERT INTO rutas.graph(id,source, target)values(56,10,8);
+INSERT INTO rutas.graph(id,source, target)values(57,14,8);
+INSERT INTO rutas.graph(id,source, target)values(58,11,8);
+INSERT INTO rutas.graph(id,source, target)values(59,14,10);
+INSERT INTO rutas.graph(id,source, target)values(60,12,10);
+INSERT INTO rutas.graph(id,source, target)values(61,11,10);
+INSERT INTO rutas.graph(id,source, target)values(62,11,12);
+INSERT INTO rutas.graph(id,source, target)values(63,13,11);
+INSERT INTO rutas.graph(id,source, target)values(64,14,13);
+INSERT INTO rutas.graph(id,source, target)values(65,7,8);
+INSERT INTO rutas.graph(id,source, target)values(66,14,6);
+INSERT INTO rutas.graph(id,source, target)values(67,15,10);
+INSERT INTO rutas.graph(id,source, target)values(68,10,15);
+
+
+
+
+
+
+
+
+
+
 
 
 -- FUNCION DEL ALGORITMO DIJSTRAK   CAMINO MAS CORTO
