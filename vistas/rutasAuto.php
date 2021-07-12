@@ -7,14 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-<div id="map" style="width: 500px; height: 500px"></div>
-    
+<div>
+<button onclick="calculoCaminoAuto('DRIVING')">Auto</button>
+    <div id="map" style="width: 500px; height: 100px"></div>
+    <div id="map" style="width: 500px; height: 100px"></div>
+
 </body>
 </html>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
-<script src="scripts/calculosRutas.js"></script>
+<script src="scripts/rutasAuto.js"></script>
 <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKTLXxqE5D5f5uBfQ1_Zv4xk24IwYgw3w&callback=initMap">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbdrkyaUV9Fxo1nQn3nu9UcUHCfPzc8q8&callback=initMap">
 </script>

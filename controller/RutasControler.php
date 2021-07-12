@@ -27,19 +27,28 @@
 
             $rutasString = $_GET['rutasString'];
             $r = explode(",", $rutasString);
+            array_pop($r);
             
-
             $clientes = $rutas->clientes();
-            
+                
+           
             $data=[];
+            $count = 0; 
             while($fila = pg_fetch_object($clientes)){    	
-                if(array_search($fila->id, $r)){
+                // if(array_search($fila->id, $r)){
                     $data[]=$fila;
+                // }
+                
+            }
+            $clientes = [];
+            for ($i=0; $i <count($r) ; $i++) { 
+                for ($j=0; $j <count($data) ; $j++) { 
+                    if($r[$i] == $data[$j]->id){
+                        $clientes[] =$data[$j];
+                    }
                 }
             }
-
-            echo json_encode($data);
-            
+            echo json_encode($clientes);
 
     }
 ?>
