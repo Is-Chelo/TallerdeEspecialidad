@@ -18,14 +18,12 @@
     <h2 class="text-white my-5 text-center"> Ruta Optima</h2>
 
         <div class="container" id="nombres">
-        <!-- <p> <i class="fas fa-map-marker-alt text-primary"></i><span class="mx-3"> La Recoleta </span></p>
-        <p> <i class="fas fa-map-marker-alt text-primary"></i><span class="mx-3"> Estadium </span></p>
-        <p> <i class="fas fa-map-marker-alt text-primary"></i><span class="mx-3"> La Recoleta </span></p> -->
+        
 
         </div>
 
     </div>
-    <div class="col-md-9">
+    <div class="col-md-9 pt-2">
 
     
         <button class="btn btn-outline-success btn " onclick="calculoCaminoAuto('DRIVING')">Auto</button>
