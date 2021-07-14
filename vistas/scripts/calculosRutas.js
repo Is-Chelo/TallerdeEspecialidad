@@ -77,7 +77,7 @@ function calculoCaminoAuto(valor){
                 aa = response
                 directionsRenderer.setDirections(aa)
             }else{
-                alert(`No Existe Ruta en auto de Origen: ${latOrigen},${longOrigen} Destino: ${latDestino},${longDestino}` )
+                alert(`No Existe Ruta para esta Opcion de Origen: ${latOrigen},${longOrigen} Destino: ${latDestino},${longDestino}` )
                 
             }
         
