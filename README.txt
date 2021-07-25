@@ -1,4 +1,4 @@
-Hola Soy Carlos Marcelo y te enseñare a importar la base de datos 
+### Hola Soy Carlos Marcelo y te enseÃ±are a importar la base de datos 
 e instalar el proyecto en modo local
 
 --------------------------------------------------------------------
@@ -21,7 +21,7 @@ Genial! Comencemos :)....
 
 	4.- Restauramos la Base de Datos "dbtallerespecialidad.sql". esta accion de realiza dando click derecho en 
 	la base de datos creada en la opcion Restore
-	Si todo salio bien PgAdmin mostrara un mensaje de "completado con éxito" o "successfully completed"
+	Si todo salio bien PgAdmin mostrara un mensaje de "completado con Ã©xito" o "successfully completed"
 
 .....   Genial! el proyecto esta Listo para ser usado 
 
